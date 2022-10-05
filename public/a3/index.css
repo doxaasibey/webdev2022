@@ -516,7 +516,7 @@ p#id-selector-2 {
 
 @media (min-width: 0px) and (max-width: 600px) {
     body {
-        background-color: yellow;
+        background-color: white;
     }
     .media-query {
         background-color: red;
