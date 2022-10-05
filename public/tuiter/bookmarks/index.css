@@ -1,0 +1,121 @@
+body {
+    font-family: "Roboto";
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(47,51,54);
+}
+
+.wd-curved-border {
+    border: 1px solid rgb(47,51,54);
+    border-radius: 0px 0px 25px 25px;
+    width: 504px;
+}
+
+.wd-icon-number-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 504px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-icon-number {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-icon {
+    padding-right: 5px;
+
+}
+
+.wd-number{
+    color: grey;
+}
+
+.wd-pg-title{
+    padding-left:16px;
+    padding-top:12px;
+    border-bottom: 1px solid rgb(47,51,54);
+
+}
+
+.wd-title{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0px;
+
+}
+
+.wd-handle{
+    font-size: 13px;
+    color: #a19e9e;
+    margin-top: 0px;
+
+}
+
+.wd-avatar-pos{
+    /*padding-left: 16px;*/
+    /*padding-top: 12px;*/
+
+}
+.wd-avatar{
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.wd-grid-row{
+    display: flex;
+    flex-direction: row;
+    clear: both;
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+.wd-grid-left{
+    padding-right: 12px;
+    float: left;
+}
+
+.wd-name{
+    padding-top: 12px;
+    color:white ;
+    font-size: 15px;
+    margin: -10px;
+    padding-left: 12px;
+}
+
+.wd-feed-right{
+    width: 80%;
+    float: left;
+    background-color: red;
+}
+.wd-handle-name{
+    color: #a19e9e;
+}
+.wd-main-content{
+    color: white;
+    font-size: 15px;
+    width: 506px;
+    padding-bottom: 12px;
+}
+
+.wd-main-image{
+    width: 504px;
+    height: 264px;
+    border-radius: 5px 5px 0px 0px;
+    padding-right: 12px;
+}
+
+.wd-under-main{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.wd-under-main-gray{
+    color: #a19e9e;
+    font-size: 15px;
+}
