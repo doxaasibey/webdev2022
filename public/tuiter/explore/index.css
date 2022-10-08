@@ -1,10 +1,20 @@
 body {
-    font-family: "Roboto";
-    background-color: black;
+    /*font-family: "Roboto";
+    background-color: black;*/
     border: 1px solid rgb(47,51,54);
-    color: white;
+    color: black;
     padding-left:16px;
 
+}
+.wd-search-tuiter{
+    bottom:10px;
+    left:10px;
+
+}
+
+.wd-gear-right{
+    top: 7px;
+    left:70px;
 }
 .wd-table{
     /*width: 100%;*/
