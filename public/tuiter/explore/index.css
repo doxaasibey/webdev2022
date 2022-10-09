@@ -12,6 +12,13 @@ body {
 
 }
 
+@media only screen and (max-width: 768px) {
+    .entertainment {
+        display: none;
+    }
+}
+
+
 .wd-gear-right{
     top: 7px;
     left:70px;
