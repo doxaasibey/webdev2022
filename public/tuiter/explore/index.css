@@ -1,15 +1,20 @@
 body {
-    /*font-family: "Roboto";
-    background-color: black;*/
+    /*font-family: "Roboto";*/
+    background-color: black;
     border: 1px solid rgb(47,51,54);
-    color: black;
+    color: white;
     padding-left:16px;
 
 }
+
 .wd-search-tuiter{
     bottom:10px;
     left:10px;
 
+}
+
+.terms{
+    font-size: smaller;
 }
 
 @media only screen and (max-width: 768px) {
@@ -18,6 +23,29 @@ body {
     }
 }
 
+
+
+.list-group .list-group-item {
+    color: white;
+    background-color: black;
+}
+
+.left-section .list-group .list-group-item {
+    border: none;
+}
+
+.right-section .list-group .list-group-item {
+    border: none;
+    background-color: #212529;
+}
+
+.middle-section .list-group .list-group-item {
+    border: none;
+}
+
+.dark-mode-lower-middle {
+    border: 1px solid grey;
+}
 
 .wd-gear-right{
     top: 7px;
