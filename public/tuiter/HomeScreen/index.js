@@ -1,7 +1,8 @@
 import NavigationSidebar from "../NavigationSidebar";
-import WhoToFollowList from "../WhoToFollowList";
-import ExploreComponent from "./ExploreComponent.js";
-
+//import WhoToFollowList from "../WhoToFollowList";
+//import ExploreComponent from "./ExploreComponent.js";
+import PostSummaryList from "../PostSummaryList";
+import PostList from "../PostList";
 //import WhoToFollowListItem from "../WhoToFollowList/WhoToFollowListItem";
 //import who from "./who.js"
 
@@ -14,12 +15,12 @@ function exploreScreen() {
         </div>
         
        
-        <div class="col-6 col-lg-7 col-xl-6">   
-            ${ExploreComponent()}
+        <div class="col-6 col-lg-7 col-xl-6">  
+            ${PostList()} 
         </div>
        
         <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-            ${WhoToFollowList()}
+        ${PostSummaryList()}
          </div>
      </div>
    `);

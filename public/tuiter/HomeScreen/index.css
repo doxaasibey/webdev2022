@@ -1,0 +1,131 @@
+body {
+    /*font-family: "Roboto";
+    background-color: black;*/
+   /* border: 1px solid rgb(47,51,54);*/
+    color: black;
+    padding-left:16px;
+
+}
+.wd-search-tuiter{
+    bottom:10px;
+    left:10px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .entertainment {
+        display: none;
+    }
+}
+
+
+.wd-gear-right{
+    top: 7px;
+    left:70px;
+}
+.wd-table{
+    /*width: 100%;*/
+    /*display: table;*/
+    display: flex;
+    flex-direction: column;
+    padding-right: 12px;
+}
+.wd-table-row{
+    /*display: table-row;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wd-search{
+    /*display: table-cell;*/
+    width: 80%;
+}
+
+.wd-gear-col{
+    /*display: table-cell;*/
+    /*width: 5%;*/
+    /*float: right;*/
+    padding-right: 12px;
+
+}
+.wd-rounded-search {
+    border-radius: 50px;
+    background-color: #222429;
+    height: 20px;
+    width: 100%;
+    color: white;
+}
+
+.wd-gear{
+    color: rgb(29,161,242);
+}
+
+.wd-nav-tabs {
+    color: rgb(29,161,242);
+    padding:0px;
+    width: 100%;
+    float: right;
+}
+
+.wd-nav-tabs li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 16px;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+
+}
+
+.wd-nav-tabs .wd-nav-selected {
+    color: rgb(29, 161, 242);
+    border-bottom: solid 4px rgb(29,161,242);
+}
+
+.wd-divider{
+    background-color: rgb(110, 118, 125);
+    height: 1px;
+    border-top-color: red;
+    border-top-width: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.wd-sub-topic {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+
+
+}
+
+.wd-sub-topic2 {
+    color: white;
+    font-size: 13px;
+
+
+}
+
+.wd-main-topic {
+    color: white;
+    font-size: 15px;
+
+}
+
+
+.wd-feed-row {
+    /*border-bottom: 5px solid rgb(47,51,54);*/
+    /*display: table-row;*/
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-image-right{
+    border-radius: 20px;
+    /*width: 100px;*/
+    height: 100px;
+    /*padding-right: 16px;*/
+    padding: 16px;
+}
+
+
