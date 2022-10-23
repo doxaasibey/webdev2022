@@ -9,7 +9,7 @@ return (
                         <div>{post.title}</div>
                     </div>
                     <div className="col-4">
-                        <img width={70} className="float-end rounded-3" src={`../../../images/${post.image}`}/>
+                        <img alt="" width={70} className="float-end rounded-3" src={`../../../images/${post.image}`}/>
                     </div>
                  </div>
             </li>

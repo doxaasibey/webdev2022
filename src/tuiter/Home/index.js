@@ -1,5 +1,3 @@
-import NavigationSideBar from "../NavigationSideBar";
-import PostSummaryList from "../PostSummaryList";
 import PostList from "../PostList";
 import React from "react";
 

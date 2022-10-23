@@ -4,7 +4,7 @@ const PostItem = ({post})=> {
                 <div className="list-group-item">
                     <div className="row">
                         <div className ="col-2">
-                             <img className="float-sm-start rounded-circle" height="50px" src={`../../../images/${post.avatarIcon}`}/>
+                             <img alt="" className="float-sm-start rounded-circle" height="50px" src={`../../../images/${post.avatarIcon}`}/>
                         </div>
                         
                         <div className="col-10">
@@ -16,7 +16,7 @@ const PostItem = ({post})=> {
                             <p> {post.tuit}</p>
                    
                             <p> 
-                                <img className="rounded border border-secondary rounded" width="500px" src={`../../../images/${post.postImage}`}/>
+                                <img alt="" className="rounded border border-secondary rounded" width="500px" src={`../../../images/${post.postImage}`}/>
                             </p>
                             <p className="fw-bolder"> {post.captionTitle}</p>
                             <p className="text-secondary"> {post.caption}</p>
