@@ -1,4 +1,4 @@
-import Labs from "./labs";
+import Labs from "./labs/a6";
 import HelloWorld from "./labs/a6/HelloWorld";
 import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
@@ -13,7 +13,7 @@ function App() {
                            element={<Labs/>}/>
                     <Route path="/hello"
                            element={<HelloWorld/>}/>
-                    <Route path="/tuiter"
+                    <Route path="/tuiter/*"
                            element={<Tuiter/>}/>
                 </Routes>
             </div>
