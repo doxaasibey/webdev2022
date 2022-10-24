@@ -1,4 +1,12 @@
 import React from "react";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faComment } from "@fortawesome/free-solid-svg-icons";
+import { faRetweet } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
+
+
 const PostItem = ({post})=> {
     return (
                 <div className="list-group-item">
@@ -21,18 +29,13 @@ const PostItem = ({post})=> {
                             <p className="fw-bolder"> {post.captionTitle}</p>
                             <p className="text-secondary"> {post.caption}</p>
                         </div>
-                        <p>
-                                <i className="text-secondary fa-regular fa-comment"></i>
-                                <span className="text-secondary">{post.numberofComment}</span>
-                            
-                                <i className="text-secondary fa-solid fa-retweet"></i>
-                                <span className="text-secondary">{post.numberofRetuits}</span>
-                            
-                                <i className="text-secondary fa-regular fa-heart"></i>
-                                <span className="text-secondary"> {post.numberofLikes}</span>
-                            
-                                <i className="text-secondary fa-solid fa-arrow-up-from-bracket"></i>
-                            </p>
+
+                        <div className="row text-muted mt-3 mb-3">
+                            <div className="col"><FontAwesomeIcon icon={faComment} /> {post.numberofComment}</div>
+                            <div className="col"><FontAwesomeIcon icon={faRetweet} /> {post.numberofRetuits} </div>
+                            <div className="col"><FontAwesomeIcon icon={faHeart} /> {post.numberofLikes} </div>
+                            <div className="col"><FontAwesomeIcon icon={faArrowUpFromBracket} /></div>
+                        </div>
                     </div>
                  </div>
     );

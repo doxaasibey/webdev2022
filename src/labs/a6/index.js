@@ -1,6 +1,6 @@
 import Classes from "./classes";
 import Styles from "./styles";
-import ConditionalOutput from "./conditionalOutput";
+import ConditionalOutput from "./conditional-output";
 import Nav from "../../nav";
 
 
