@@ -6,6 +6,23 @@ body {
     padding-left:16px;
 
 }
+
+.under {
+    position:relative;
+    z-index:-1;
+}
+
+.over {
+    position:relative;
+    left:30px;
+    bottom:30px;
+}
+
+.redColor {
+    color: red;
+}
+
+
 .wd-search-tuiter{
     bottom:10px;
     left:10px;

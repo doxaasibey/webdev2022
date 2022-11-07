@@ -32,10 +32,10 @@ const NavigationSidebar = () => {
                     ${active === 'lists'?'active':''}`}>
                 Lists
             </a>
-            <a href="#0" className={`list-group-item
+            <Link to="/tuiter/profile"  className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
                 Profile
-            </a>
+            </Link>
             <a href="#0" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 More
