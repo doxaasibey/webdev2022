@@ -1,24 +1,16 @@
-import Labs from "./labs";
-import HelloWorld from "./labs/a6/HelloWorld";
-import Tuiter from "./tuiter";
-import {BrowserRouter} from "react-router-dom";
-import {Routes, Route} from "react-router";
-import React from "react";
+import express from 'express';
+import cors from 'cors'
 
-function App() {
-    return (
-        <BrowserRouter>
-            <div className="container">
-                <Routes>
-                    <Route path="/*"
-                           index element={<Labs/>}/>
-                    <Route path="/hello"
-                           element={<HelloWorld/>}/>
-                    <Route path="/tuiter/*"
-                           element={<Tuiter/>}/>
-                </Routes>
-            </div>
-        </BrowserRouter>
-    );
-}
-export default App;
+import UserController from "./controllers/users/users-controller.js";
+import HelloController from "./controllers/hello-controller.js";
+import TuitsController
+    from "./controllers/tuits/tuits-controller.js";
+
+const app = express();
+app.use(cors())
+app.use(express.json());
+
+TuitsController(app);
+HelloController(app);
+UserController(app);
+app.listen(process.env.PORT || 4000);

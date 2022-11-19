@@ -11,7 +11,19 @@ const TuitStats = ({tuit})=> {
         <div className="row text-muted mt-3 mb-3">
             <div className="col"><FontAwesomeIcon icon={faComment} /> {tuit.replies}</div>
             <div className="col"><FontAwesomeIcon icon={faRetweet} /> {tuit.retuits} </div>
-            <div className="col"><FontAwesomeIcon className={tuit.liked ? "redColor" : ""} icon={faHeart} /> {tuit.likes} </div>
+            <div className="col" onClick={() => dispatch(updateTuitThunk({
+                ...tuit,
+                likes: tuit.likes + 1,
+                liked: true
+            }))}><FontAwesomeIcon icon={faHeart} color={tuit.liked ? "red" : undefined}/> {tuit.likes}
+            </div>
+            <div className="col" onClick={() => dispatch(updateTuitThunk({
+                ...tuit,
+                dislikes: tuit.dislikes + 1,
+                disliked: true
+            }))}>
+                <FontAwesomeIcon icon={faThumbsDown} color={tuit.disliked ? "black" : undefined}></FontAwesomeIcon> {tuit.dislikes}
+            </div>
             <div className="col"><FontAwesomeIcon icon={faArrowUpFromBracket} /></div>
         </div>
     );
