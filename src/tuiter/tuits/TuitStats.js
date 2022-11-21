@@ -1,12 +1,16 @@
 import React from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import {faHeart, faThumbsDown} from "@fortawesome/free-solid-svg-icons";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 import { faRetweet } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
+import {updateTuitThunk} from "../../services/tuits-thunks.js";
+import {useDispatch} from "react-redux";
 
 const TuitStats = ({tuit})=> {
+    const dispatch = useDispatch();
+
     return (
         <div className="row text-muted mt-3 mb-3">
             <div className="col"><FontAwesomeIcon icon={faComment} /> {tuit.replies}</div>
